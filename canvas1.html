@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+ <title>Canvas Element</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+  canvas {
+   border: 1px solid black;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   left: 260px;
+   top: 5px;
+  }
+ </style>
+
+  
+</head>
+
+<body onload="begin()">
+ <!-- <div>TODO write content</div>-->
+ <div align="center">
+  <h2>Draw Rectangle</h3>
+   <label for="colorpicker" style="bottom:100px;left:680px ;font-weight:bold;font-size: medium;">Pick a color</label>
+   <input type="color" id="colorpicker" name="colorpicker" value="#e66465" style="bottom:100px;left:780px">
+ </div>
+ 
+ <canvas id="canvas" width="750" height="420"></canvas>
+
+ <div style="position:absolute;bottom:80px;left:620px">
+  <button type="button" onclick="Clean()">Clean</button>
+ </div>
+ 
+ <script src='canvas.js'></script>
+
+
+
+</body>
+
+</html>
